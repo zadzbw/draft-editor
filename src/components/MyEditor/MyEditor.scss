@@ -1,0 +1,53 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+@import "MyEditorCustomElements";
+
+.editor-root {
+  border: 1px solid $border-color;
+  padding: 0 16px 16px;
+}
+
+.editor-container {
+  cursor: text;
+  font-size: $font-size-lg;
+  word-break: break-word;
+
+  // draft placeholder style
+  .public-DraftEditorPlaceholder {
+    &-root {
+      color: $gray-45;
+    }
+
+    &-hasFocus {
+      color: $gray-35;
+    }
+  }
+
+  // draft content style
+  .public-DraftEditor-content {
+    min-height: 120px;
+    max-height: 360px;
+    overflow-y: scroll;
+  }
+
+  // draft common style
+  .public-DraftEditor-content, .public-DraftEditorPlaceholder-root {
+    margin: 0 -16px -16px;
+    padding: 16px;
+  }
+
+  .public-DraftStyleDefault-pre {
+    background-color: $gray-5;
+    padding: 16px;
+    font-size: $font-size-base;
+    border-radius: $border-radius-base;
+  }
+
+  &-hide-placeholder {
+    .public-DraftEditorPlaceholder {
+      &-root {
+        display: none;
+      }
+    }
+  }
+}

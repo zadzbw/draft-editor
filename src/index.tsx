@@ -3,6 +3,7 @@ import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 // 如果用了ant-design，就可以先不引入normalize.css
 // import 'normalize.css';
+import 'draft-js/dist/Draft.css';
 import './style/index.scss';
 
 import App from './App';

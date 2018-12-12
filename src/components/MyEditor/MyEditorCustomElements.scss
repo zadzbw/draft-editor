@@ -1,0 +1,28 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+
+// 这里用于指定各个block的样式
+.editor-unstyled {
+  margin-bottom: 16px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.editor-blockquote {
+  color: $gray-60;
+  background-color: $gray-5;
+  margin: 16px 0;
+  padding: 8px 16px;
+  border-left: 6px solid $gray-30;
+
+  & + & {
+    margin-top: -16px;
+  }
+}
+
+.editor-code-block {
+  transform: translateZ(0);
+  margin-bottom: 0;
+}
