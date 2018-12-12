@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./mixin";
+
+// math style
+.math-block[mathimg="1"] {
+  display: block;
+  margin: 1em auto;
+}
+
+.math-inline[mathimg="1"] {
+  display: inline;
+  margin: 0 3px;
+  vertical-align: middle;
+}
+
+.math-inline[mathimg="1"], .math-block[mathimg="1"] {
+  max-width: 100%;
+
+  @include night-mode {
+    filter: invert(0.8);
+  }
+}

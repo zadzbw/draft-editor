@@ -1,0 +1,32 @@
+@import "../variables";
+
+@mixin triangle($direction:'down') {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px $text-color-secondary solid;
+
+  @if $direction == 'down' {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom: 0;
+  }
+
+  @if $direction == 'up' {
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top: 0;
+  }
+
+  @if $direction == 'left' {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-left: 0;
+  }
+
+  @if $direction == 'right: ' {
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right: 0;
+  }
+}

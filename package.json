@@ -1,0 +1,103 @@
+{
+  "name": "draft-editor",
+  "version": "1.0.0",
+  "description": "a rich text editor based on draft-js",
+  "main": "src/index.tsx",
+  "repository": "git@github.com:zadzbw/draft-editor.git",
+  "keywords": [
+    "editor",
+    "draft-js"
+  ],
+  "author": "zadzbw <609842385@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --config build/webpack/webpack.dev.config.js --colors",
+    "build": "NODE_ENV=production webpack --config build/webpack/webpack.prod.config.js --profile --colors",
+    "build:ts": "tsc",
+    "lint": "eslint --ext .js,.ts,.tsx src --format codeframe",
+    "lint:fix": "npm run lint -- --fix",
+    "format": "prettier-eslint src/**/*.{js,ts,tsx} --write"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,ts,tsx}": [
+      "npm run format",
+      "git add"
+    ]
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@babel/runtime-corejs2": "^7.2.0",
+    "antd": "^3.11.2",
+    "babel-plugin-import": "^1.11.0",
+    "lodash": "^4.17.11",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-hot-loader": "^4.3.12"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
+    "@babel/plugin-proposal-decorators": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/plugin-transform-runtime": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.1.0",
+    "@commitlint/cli": "^7.2.1",
+    "@commitlint/config-conventional": "^7.1.2",
+    "@types/node": "^10.12.12",
+    "@types/react": "^16.7.10",
+    "@types/react-dom": "^16.0.11",
+    "autoprefixer": "^9.4.2",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-lodash": "^3.3.4",
+    "brotli-webpack-plugin": "^1.0.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "compression-webpack-plugin": "^2.0.0",
+    "css-loader": "^2.0.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-typescript": "^0.14.0",
+    "fork-ts-checker-webpack-plugin": "^0.5.0",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "happypack": "^5.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "husky": "^1.2.0",
+    "inline-manifest-webpack-plugin": "^4.0.2",
+    "lint-staged": "^8.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^1.15.3",
+    "prettier-eslint-cli": "^4.7.1",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "typescript": "^3.2.2",
+    "typescript-eslint-parser": "^21.0.2",
+    "webpack": "^4.27.1",
+    "webpack-bundle-analyzer": "^3.0.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10",
+    "webpack-merge": "^4.1.5",
+    "webpackbar": "^3.1.3"
+  },
+  "engines": {
+    "node": ">= 8.6.0"
+  }
+}

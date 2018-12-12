@@ -1,0 +1,13 @@
+@import "../variables";
+
+@mixin selection-color($bgc:$body-background,$color:$text-selection-color) {
+  ::-moz-selection {
+    background: $bgc;
+    color: $color;
+  }
+
+  ::selection {
+    background: $bgc;
+    color: $color;
+  }
+}

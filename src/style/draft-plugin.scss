@@ -1,0 +1,16 @@
+@import "./variables";
+@import "./mixin";
+
+// 这里是 draft 各个 plugin 的样式
+
+.focus-plugin {
+  &-focused {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px $primary-pink-light;
+  }
+
+  &-unfocused:hover {
+    cursor: pointer;
+    box-shadow: 0 0 0 2px rgba($primary-pink-light, 0.4);
+  }
+}

@@ -1,0 +1,8 @@
+@import "../variables";
+
+// 夜间主题
+@mixin night-mode() {
+  :global(body.#{reader-night-mode}) & {
+    @content;
+  }
+}

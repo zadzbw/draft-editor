@@ -1,0 +1,8 @@
+@import "../variables";
+
+// 溢出显示省略号
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

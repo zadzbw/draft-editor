@@ -1,0 +1,16 @@
+#
+.git
+**/.DS_Store
+node_modules
+dist
+.awcache
+
+# editor configs
+.idea
+.vscode
+
+# log files
+*.log
+
+# test files
+coverage

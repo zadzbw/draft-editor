@@ -1,0 +1,21 @@
+@import "../variables";
+
+// 改变placeholder的颜色
+@mixin placeholder($color:$gray-20) {
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  // Firefox 18-
+  &:-moz-placeholder {
+    color: $color;
+  }
+  // Internet Explorer 10+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  // Safari and Chrome
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+}

@@ -1,0 +1,120 @@
+// Font-Size
+$font-size-sm: 12px;
+$font-size-base: 14px;
+$font-size-lg: 16px;
+$font-size-xl: 18px;
+
+// Color
+$white-color: #fff;
+$black-color: #000;
+
+$gray-5: darken($white-color, 5%); // #f2f2f2
+$gray-10: darken($white-color, 10%); // #e6e6e6
+$gray-15: darken($white-color, 15%); // #d9d9d9
+$gray-20: darken($white-color, 20%); // #cccccc
+$gray-25: darken($white-color, 25%); // #bfbfbf
+$gray-30: darken($white-color, 30%); // #b3b3b3
+$gray-35: darken($white-color, 35%); // #a6a6a6
+$gray-40: darken($white-color, 40%); // #999999
+$gray-45: darken($white-color, 45%); // #8c8c8c
+$gray-50: darken($white-color, 50%); // #gray
+$gray-55: darken($white-color, 55%); // #737373
+$gray-60: darken($white-color, 60%); // #666666
+$gray-65: darken($white-color, 65%); // #595959
+$gray-70: darken($white-color, 70%); // #4d4d4d
+$gray-75: darken($white-color, 75%); // #404040
+$gray-80: darken($white-color, 80%); // #333333
+$gray-85: darken($white-color, 85%); // #262626
+$gray-90: darken($white-color, 90%); // #1a1a1a
+$gray-95: darken($white-color, 95%); // #0d0d0d
+
+$primary-pink: #ec7259;
+$primary-pink-alpha: rgba($primary-pink, 0.8);
+$primary-pink-light: lighten($primary-pink, 10%);
+$primary-pink-dark: darken($primary-pink, 10%);
+$primary-green: #42c02e;
+$primary-green-alpha: rgba($primary-green, 0.8);
+$primary-green-light: lighten($primary-green, 10%);
+$primary-green-dark: darken($primary-green, 10%);
+$primary-blue: #3194d0;
+$primary-blue-alpha: rgba($primary-blue, 0.8);
+$primary-blue-light: lighten($primary-blue, 10%);
+$primary-blue-dark: darken($primary-blue, 10%);
+$light-yellow-1: #fcfaf2;
+$light-yellow-2: #efe9d9;
+
+// Night
+$night-gray-30: $gray-30;
+$night-gray-76: darken($white-color, 76%); // #3d3d3d
+$night-gray-82: darken($white-color, 82%); // #2e2e2e
+
+// Base & Require ---
+$body-background: $white-color;
+$night-body-background: $night-gray-76;
+$border-color: $gray-15;
+$night-border-color: $night-gray-82;
+$text-color: $gray-65;
+$night-text-color: $night-gray-30;
+$text-color-white: $white-color;
+$text-color-secondary: $gray-40;
+$text-color-darken: $gray-80;
+$text-selection-color: $primary-blue-dark;
+$info-color: $primary-blue;
+$success-color: $primary-green;
+$error-color: #f50;
+$warning-color: #fa0;
+
+$line-height-base: 20 / 14;
+
+// Button-common
+$btn-background-color: $body-background;
+$night-btn-background-color: $night-body-background;
+
+// Button-base
+$btn-base-color: $text-color;
+$night-btn-base-color: $night-text-color;
+$btn-base-border-color: transparent;
+
+// Button-primary
+$btn-primary-color: $primary-green;
+$btn-primary-border-color: $primary-green;
+
+// Button-danger
+$btn-danger-color: $error-color;
+$btn-danger-border-color: $error-color;
+
+// StyleButton
+$style-btn-active-color: $primary-pink;
+
+// border-radius
+$border-radius-sm: 2px;
+$border-radius-base: 4px;
+$border-radius-lg: 6px;
+
+// box-shadow
+$shadow-color: rgba(0, 0, 0, 0.2);
+$shadow-1-up: 0 -1px 6px $shadow-color;
+$shadow-1-down: 0 1px 6px $shadow-color;
+$shadow-1-left: -1px 0 6px $shadow-color;
+$shadow-1-right: 1px 0 6px $shadow-color;
+$box-shadow-base: $shadow-1-down;
+$box-shadow-2: 0 2px 8px $shadow-color;
+
+// Animation
+$ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-out-back: cubic-bezier(0.12, 0.4, 0.29, 1.46);
+$ease-in-back: cubic-bezier(0.71, -0.46, 0.88, 0.6);
+$ease-in-out-back: cubic-bezier(0.71, -0.46, 0.29, 1.46);
+$ease-out-circ: cubic-bezier(0.08, 0.82, 0.17, 1);
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+$ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+$custom-ease-out: cubic-bezier(0.19, 0.4, 0.17, 0.85);
+
+// z-index
+$modal-mask-zIndex: 1000;
+$modal-wrap-zIndex: 1050;
