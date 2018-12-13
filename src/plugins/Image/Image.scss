@@ -1,0 +1,56 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+
+.editor-image {
+  display: block;
+
+  &-package {
+    display: block;
+  }
+
+  &-entity {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    vertical-align: middle;
+  }
+
+  &-caption {
+    font-size: $font-size-base;
+    color: $gray-45;
+    margin-top: 10px;
+    padding: 0 16px;
+    text-align: center;
+
+    &-editing {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    &-is-placeholder {
+      color: $gray-25;
+    }
+
+    &-input {
+      display: block;
+      position: absolute;
+      z-index: 2000;
+
+      textarea {
+        display: block;
+        color: $gray-45;
+        font: inherit;
+        font-size: $font-size-base;
+        width: 100%;
+        height: 100%;
+        padding: 0 16px;
+        line-height: 1.5;
+        text-align: center;
+        overflow: hidden;
+        border: none;
+        background: none;
+        resize: none;
+      }
+    }
+  }
+}

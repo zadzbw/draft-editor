@@ -1,0 +1,13 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+
+.editor-divider {
+  overflow: hidden;
+
+  hr {
+    max-width: 80%;
+    margin: 2em auto;
+    border: none;
+    border-top: 1px solid $border-color;
+  }
+}

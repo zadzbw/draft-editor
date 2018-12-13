@@ -1,0 +1,70 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+
+.editor-control-toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  border-bottom: 1px solid $border-color;
+  padding: 8px 0;
+
+  &-separator {
+    display: inline-block;
+    height: 20px;
+    margin: 0 3px;
+    vertical-align: middle;
+    width: 1px;
+    background-color: $border-color;
+    flex-shrink: 0;
+  }
+}
+
+.editor-control-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 24px;
+  height: 24px;
+  border-radius: $border-radius-base;
+  margin: 0 4px;
+  padding: 2px 0;
+  border: 1px solid transparent;
+  color: $gray-45;
+  font-weight: bolder;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover, &-active {
+    background-color: $gray-5;
+    border-color: $border-color;
+  }
+
+  &-active {
+    color: $style-btn-active-color;
+  }
+
+  &-disabled {
+    cursor: not-allowed;
+    color: $gray-45;
+    opacity: 0.5;
+
+    > * {
+      pointer-events: none;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+    }
+
+    &.editor-control-btn-active {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+}

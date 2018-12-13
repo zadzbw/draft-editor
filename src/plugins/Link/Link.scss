@@ -1,0 +1,19 @@
+@import "../../style/variables";
+@import "../../style/mixin";
+
+.editor-link {
+  cursor: text;
+  color: $primary-blue;
+  border-bottom: 1px solid $primary-blue;
+  transition: all 0.1s $ease-in-out;
+  will-change: color, border-bottom-color;
+
+  &:hover {
+    color: $primary-blue-dark;
+    border-bottom-color: $primary-blue-dark;
+  }
+
+  & + & {
+    margin-left: 2px;
+  }
+}
