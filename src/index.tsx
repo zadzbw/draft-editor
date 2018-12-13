@@ -1,3 +1,9 @@
+// polyfill
+import '@babel/polyfill';
+import 'core-js/fn/string/trim-left';
+import 'core-js/fn/string/trim-right';
+import 'raf/polyfill';
+
 // start
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';

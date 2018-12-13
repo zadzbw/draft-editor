@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`badge should log error badge correctly 1`] = `
+Array [
+  "%c title4 %c content4 ",
+  "padding: 1px; border-radius: 3px 0 0 3px; color: #fff; background: #606060;",
+  "padding: 1px; border-radius: 0 3px 3px 0; color: #fff; background: #f50;",
+]
+`;
+
+exports[`badge should log info badge correctly 1`] = `
+Array [
+  "%c title1 %c content1 ",
+  "padding: 1px; border-radius: 3px 0 0 3px; color: #fff; background: #606060;",
+  "padding: 1px; border-radius: 0 3px 3px 0; color: #fff; background: #1475b2;",
+]
+`;
+
+exports[`badge should log success badge correctly 1`] = `
+Array [
+  "%c title2 %c content2 ",
+  "padding: 1px; border-radius: 3px 0 0 3px; color: #fff; background: #606060;",
+  "padding: 1px; border-radius: 0 3px 3px 0; color: #fff; background: #42c02e;",
+]
+`;
+
+exports[`badge should log warning badge correctly 1`] = `
+Array [
+  "%c title3 %c content3 ",
+  "padding: 1px; border-radius: 3px 0 0 3px; color: #fff; background: #606060;",
+  "padding: 1px; border-radius: 0 3px 3px 0; color: #fff; background: #fa0;",
+]
+`;

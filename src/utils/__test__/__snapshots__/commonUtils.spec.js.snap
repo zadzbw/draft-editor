@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`commonUtils getShortcut should get shortcut in mac 1`] = `"⌘⌥⇧B"`;
+
+exports[`commonUtils getShortcut should get shortcut in windows 1`] = `"Ctrl+Alt+Shift+B"`;
+
+exports[`commonUtils transformBlockQuote should do nothing when has no blockquote  1`] = `"<p>test</p>"`;
+
+exports[`commonUtils transformBlockQuote should transform adjacent blockquote correctly 1`] = `"<blockquote>111</blockquote><blockquote>222<br>333</blockquote><blockquote>444</blockquote><blockquote>555<br>666</blockquote>"`;
+
+exports[`commonUtils transformBlockQuote should transform multiple blockquote correctly 1`] = `"<blockquote>111</blockquote><blockquote>222<br>333</blockquote><p>test</p><blockquote>444</blockquote><blockquote>555<br>666</blockquote>"`;
+
+exports[`commonUtils transformBlockQuote should transform single blockquote correctly 1`] = `"<blockquote>111</blockquote><blockquote>222<br>333</blockquote>"`;

@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`setState should add 3 items and add 3 items in fact 1`] = `
+<Wrapper>
+  <Test>
+    <p />
+  </Test>
+  <button
+    onClick={[Function]}
+  >
+    click
+  </button>
+</Wrapper>
+`;
+
+exports[`setState should add 3 items and add 3 items in fact 2`] = `
+<Wrapper>
+  <Test>
+    <p>
+      <span
+        className="span"
+        key="1"
+      >
+        1
+      </span>
+      <span
+        className="span"
+        key="2"
+      >
+        2
+      </span>
+      <span
+        className="span"
+        key="3"
+      >
+        3
+      </span>
+    </p>
+  </Test>
+  <button
+    onClick={[Function]}
+  >
+    click
+  </button>
+</Wrapper>
+`;
+
+exports[`setState should add 3 items and add 3 items in fact 3`] = `
+<Wrapper>
+  <Test>
+    <p>
+      <span
+        className="span"
+        key="1"
+      >
+        1
+      </span>
+      <span
+        className="span"
+        key="2"
+      >
+        2
+      </span>
+      <span
+        className="span"
+        key="3"
+      >
+        3
+      </span>
+      <span
+        className="span"
+        key="4"
+      >
+        4
+      </span>
+      <span
+        className="span"
+        key="5"
+      >
+        5
+      </span>
+      <span
+        className="span"
+        key="6"
+      >
+        6
+      </span>
+    </p>
+  </Test>
+  <button
+    onClick={[Function]}
+  >
+    click
+  </button>
+</Wrapper>
+`;
+
+exports[`setState should add 3 items but add 1 item in fact 1`] = `
+<Wrapper>
+  <Test>
+    <p />
+  </Test>
+  <button
+    onClick={[Function]}
+  >
+    click
+  </button>
+</Wrapper>
+`;
+
+exports[`setState should add 3 items but add 1 item in fact 2`] = `
+<Wrapper>
+  <Test>
+    <p>
+      <span
+        className="span"
+        key="3"
+      >
+        3
+      </span>
+    </p>
+  </Test>
+  <button
+    onClick={[Function]}
+  >
+    click
+  </button>
+</Wrapper>
+`;
+
+exports[`setState should add 3 items but add 1 item in fact 3`] = `
+<Wrapper>
+  <Test>
+    <p>
+      <span
+        className="span"
+        key="3"
+      >
+        3
+      </span>
+      <span
+        className="span"
+        key="6"
+      >
+        6
+      </span>
+    </p>
+  </Test>
+  <button
+    onClick={[Function]}
+  >
+    click
+  </button>
+</Wrapper>
+`;
+
+exports[`setState should batch update state 1`] = `
+<Wrapper>
+  <div>
+    <p>
+      a: 
+      33
+    </p>
+    <p>
+      b: 
+      0
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      change a
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      change b
+    </button>
+  </div>
+</Wrapper>
+`;
+
+exports[`setState should batch update state 2`] = `
+<Wrapper>
+  <div>
+    <p>
+      a: 
+      33
+    </p>
+    <p>
+      b: 
+      333
+    </p>
+    <button
+      onClick={[Function]}
+    >
+      change a
+    </button>
+    <button
+      onClick={[Function]}
+    >
+      change b
+    </button>
+  </div>
+</Wrapper>
+`;
