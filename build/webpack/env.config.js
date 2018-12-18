@@ -1,5 +1,5 @@
 const path = require('path');
-const { version } = require('../../package.json');
+const { name, version } = require('../../package.json');
 
 const commonEnv = {
   VERSION: JSON.stringify(`v${version}`),
@@ -22,7 +22,7 @@ module.exports = {
       NODE_ENV: JSON.stringify('production'),
     }),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: `/${name}/dist/`, // gh-pages
     productionSourceMap: true,
     productionGzipExtensions: ['js', 'css'],
     bundleAnalyzerReport: process.env.npm_config_report,
